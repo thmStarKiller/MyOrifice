@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./animations.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +26,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-x-hidden`}
+        suppressHydrationWarning={true}
       >
-        {children}
+        {/* Video Background */}
+        <div className="fixed inset-0 z-0">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover opacity-30 blur-[2px]"
+          >
+            <source src="/Video_Background_Poop_Loop.mp4" type="video/mp4" />
+          </video>
+          {/* Overlay to ensure readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-transparent to-black/60" />
+        </div>
+        
+        {/* Main Content */}
+        <div className="relative z-10">
+          {children}
+        </div>
       </body>
     </html>
   );

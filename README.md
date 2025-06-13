@@ -1,4 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Origines (DIVABOX) Scandal Report 💩
+
+A mobile-first Next.js web application presenting a comprehensive French report about the My Origines (DIVABOX) scandal.
+
+## Features
+
+- 📱 **Mobile-First Design**: Optimized for mobile devices with responsive layouts
+- 🎨 **Modern UI**: Built with Next.js 15, TypeScript, and Tailwind CSS
+- 🧩 **shadcn/ui Components**: Beautiful, accessible UI components
+- 🇫🇷 **French Content**: Authentic French report with proper typography
+- 🌙 **Dark Mode Support**: Toggle between light and dark themes
+- ⚡ **Performance**: Static generation for fast loading
+
+## Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Deployment**: Vercel-ready
 
 ## Getting Started
 
@@ -14,11 +34,50 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the scandal report.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── globals.css          # Global styles with Tailwind CSS
+│   ├── layout.tsx           # Root layout component
+│   └── page.tsx             # Main page importing the report
+├── components/
+│   ├── ui/                  # shadcn/ui components
+│   │   ├── badge.tsx
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   └── separator.tsx
+│   └── MyOriginesReport.tsx # Main report component
+└── lib/
+    └── utils.ts             # Utility functions
+```
+
+## Report Sections
+
+The report covers:
+- 🏢 **Company Overview**: My Origines background and structure
+- 🚨 **Service Client Issues**: Customer service problems
+- 🔍 **Authenticity Concerns**: Product authenticity questions
+- ⭐ **Review Manipulation**: Suspicious review patterns
+- 👥 **Employee Feedback**: Internal company insights
+- 📊 **Final Verdict**: Comprehensive analysis
+
+## Development
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+### Running Tests
+
+```bash
+npm run lint
+```
 
 ## Learn More
 
