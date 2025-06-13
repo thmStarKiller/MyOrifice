@@ -161,9 +161,8 @@ export default function MyOriginesReportAnimated() {
                         L'Équipe Dirigeante
                       </span>
                     </AccordionTrigger>
-                    <AccordionContent className="text-base space-y-4 animate-fade-in-up">
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div className="bg-purple-900/50 backdrop-blur-sm p-4 rounded-lg hover:bg-purple-900/70 transition-all duration-500 hover:scale-105 animate-float">
+                    <AccordionContent className="text-base space-y-4 animate-fade-in-up">                      <div className="grid md:grid-cols-2 gap-6">
+                        <div className="bg-purple-900/50 backdrop-blur-sm p-4 rounded-lg hover:bg-purple-900/70 transition-all duration-500 hover:scale-[1.01] animate-float overflow-hidden">
                           <h4 className="font-semibold text-purple-300 mb-2">
                             <span className="animate-bounce">👑</span> Jean
                             Philippe de Peretti
@@ -173,9 +172,8 @@ export default function MyOriginesReportAnimated() {
                             Le patron, celui qui mène la danse dans cette saga
                             corsica. Il dirige cette SAS avec un capital social
                             de 5,81 millions d'euros.
-                          </p>
-                        </div>
-                        <div className="bg-green-900/50 backdrop-blur-sm p-4 rounded-lg hover:bg-green-900/70 transition-all duration-500 hover:scale-105 animate-float-delayed">
+                          </p>                        </div>
+                        <div className="bg-green-900/50 backdrop-blur-sm p-4 rounded-lg hover:bg-green-900/70 transition-all duration-500 hover:scale-[1.01] animate-float-delayed overflow-hidden">
                           <h4 className="font-semibold text-green-300 mb-2">
                             <span className="animate-bounce">👨‍💼</span> Michel De
                             Peretti
@@ -209,9 +207,8 @@ export default function MyOriginesReportAnimated() {
                         <div className="text-white/80 leading-relaxed">
                           Interparfums SA a mis la main au portefeuille en 2020
                           avec 25% des parts !
-                        </div>
-                      </div>
-                      <div className="bg-gradient-to-r from-yellow-900/50 to-orange-900/50 backdrop-blur-sm p-6 rounded-lg hover:scale-105 transition-transform duration-500 animate-gradient-x-slow">
+                        </div>                      </div>
+                      <div className="bg-gradient-to-r from-yellow-900/50 to-orange-900/50 backdrop-blur-sm p-6 rounded-lg hover:scale-[1.01] transition-transform duration-500 animate-gradient-x-slow overflow-hidden">
                         <h4 className="font-semibold text-center mb-2 text-yellow-300 animate-bounce">
                           🎯 L'Objectif Ambitieux
                         </h4>
@@ -255,15 +252,14 @@ export default function MyOriginesReportAnimated() {
                       <span className="animate-bounce">
                         Service Client : Le Silence des Agneaux 💩📞
                       </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="animate-fade-in-up">
-                      <Alert className="mb-4 border-red-300/50 bg-red-900/50 backdrop-blur-sm animate-pulse-subtle">
-                        <AlertDescription className="text-white/90">
+                    </AccordionTrigger>                    <AccordionContent className="animate-fade-in-up">
+                      <div className="mb-4 border-red-300/50 bg-red-900/50 backdrop-blur-sm rounded-lg p-4 border-2">
+                        <div className="text-white/90 leading-relaxed">
                           Imaginez que vous commandez un parfum à 80€, et
                           puis... plus rien ! Ni colis, ni nouvelles, ni réponse
                           aux mails.
-                        </AlertDescription>
-                      </Alert>
+                        </div>
+                      </div>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                         <div className="text-center p-4 bg-black/60 backdrop-blur-sm rounded-lg border border-red-500/30 hover:border-red-400/60 transition-all duration-500 hover:scale-[1.02] animate-float overflow-hidden">
                           <div className="text-2xl mb-2 animate-bounce">📦</div>
@@ -307,18 +303,17 @@ export default function MyOriginesReportAnimated() {
                         Authenti-Cité ou Arnaque-Cité ? 🤥
                       </span>
                     </AccordionTrigger>
-                    <AccordionContent className="animate-fade-in-up">
-                      <div className="space-y-4">
-                        <Alert className="border-yellow-300/50 bg-yellow-900/50 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
-                          <div className="font-semibold text-yellow-300 mb-2 animate-pulse">
+                    <AccordionContent className="animate-fade-in-up">                      <div className="space-y-4">
+                        <div className="border-yellow-300/50 bg-yellow-900/50 backdrop-blur-sm rounded-lg p-4 border-2">
+                          <div className="font-semibold text-yellow-300 mb-3 animate-pulse">
                             🚨 Le Mystère du Parfum Évaporé
                           </div>
-                          <AlertDescription className="text-white/90">
+                          <div className="text-white/90 leading-relaxed">
                             Des tonnes de plaintes ! Les clients reçoivent des
                             parfums qui ne sentent rien, qui ne tiennent pas, ou
                             qui sentent "différent" de l'original.
-                          </AlertDescription>
-                        </Alert>
+                          </div>
+                        </div>
 
                         <div className="bg-black/50 backdrop-blur-sm p-4 rounded-lg border border-yellow-500/30 hover:border-yellow-400/60 transition-all duration-500 animate-slide-in-left">
                           <h4 className="font-semibold text-white mb-2 animate-pulse">
@@ -387,15 +382,14 @@ export default function MyOriginesReportAnimated() {
                       >
                         "1er site de beauté"
                       </Badge>
-                      sur 20 testés par l'UFC Que Choisir.
-                    </p>
-                    <Alert className="border-green-300/50 bg-green-900/50 backdrop-blur-sm">
-                      <AlertDescription className="text-sm italic text-white/80">
+                      sur 20 testés par l'UFC Que Choisir.                    </p>
+                    <div className="border-green-300/50 bg-green-900/50 backdrop-blur-sm rounded-lg p-4 border-2">
+                      <div className="text-sm italic text-white/80 leading-relaxed">
                         Mais ça, c'était il y a une éternité dans le monde du
                         e-commerce ! Cinq ans, c'est un siècle ! On se demande
                         ce qu'ils diraient aujourd'hui...
-                      </AlertDescription>
-                    </Alert>
+                      </div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>{" "}
